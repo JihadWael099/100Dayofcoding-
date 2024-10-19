@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="font-family: Oswald
+;">
+    <div class="main">
+        <div class="card">
+            <!-- search -->
+          <div class="div-search">
+            <input type="text" id="searchInput" placeholder="Enter city name">
+            <button id="searchButton"><img src="./images/search.png" alt="" style="height: 20px;width: 20px;"></button>
+          </div>
+          <!-- image -->
+           <div class="image">
+            <img src="./images/clear.png" alt="weatherImage" id="sun">
+           </div>
+           <!-- weatherNumber -->
+            <div class="data">
+                <div class="number" style="font-size:xxx-large ">
+                    22 <span style="font-size:xxx-large">°C</span>
+                </div>
+                <div class="city">
+                 Egypt
+                </div>
+            </div>
+            <!-- footer -->
+             <div class="foot">
+                
+                <div>
+                    <div class="hum" style="font-weight:bold;">
+                       190%
+                    </div>
+                    <div style="font-weight:bold;">
+                        human
+                    </div>
+                 </div>
+                 <div>
+                    <div class="hum" style="font-weight:bold;">
+                       190%
+                    </div>
+                    <div style="font-weight:bold;" >
+                        wind
+                    </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
