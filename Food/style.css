@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.primary-text{
+    color:#e4b95b ;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+.btn-primary{
+    color: aliceblue;
+    border: 1px solid white;
+}
+.btn-primary:hover,
+.btn-second{
+    background-color: #e4b95b;
+}
+header{
+    height: 100vh;
+    background-image: url("./img/home_bg.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0,0.5);
+
+}
+header *{
+    z-index: 10;
+}
+#navbar img{
+   width: 80px;
+   margin-left: 100px;
+  
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+   
+}
+ul 
+{
+    list-style:none ;
+   
+}
+a
+{
+    text-decoration: none;
+}
+#list ul{
+    display: flex;
+    margin-right: 100px;
+    
+
+}
+#list ul li a {
+    padding: 15px 20px ;
+    color: aliceblue;
+    font-weight: 600;
+}
+#list ul li a:hover{
+    border-bottom: 2px solid #e4b95b ;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    
+}
+#main h1{
+    font-size: 40px;
+    color: aliceblue;
+}
+#main p{
+    margin: 20px 0 40px;
+    color: aliceblue;
+}
+.container{
+    margin: auto;
+    
+    max-width: 1100px;
+
+}
+#about{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+#about .title,#offers .title,#menu .title{
+text-align: center;
+margin-bottom: 4rem;
+
+}
+#about h2{
+    font-size: 40px;
+    color: #383848;
+    margin-bottom: 20px;
+
+}
+#about .title p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+
+}
+#about .about-containt{
+    display: flex;
+    justify-content: space-between;
+
+}
+#about .about-containt img{
+    width: 450px;
+}
+#about .about-containt p{
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.btn-second{
+    color: #fff;
+    background:#383848;
+    margin-top: 2rem;
+}
+.btn-second:hover{
+    background-color: #e4b95b;
+}
+#offers{
+    background-color: #e4b95b;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    background:url('./img/offer-background.jpg') center center/cover fixed ;
+}
+#offers h2{
+    font-size: 40px;
+    color: #e4b95b;
+    margin-bottom: 20px;
+
+}
+#offers .title p{
+    color: #fff;
+    font-weight: 500;
+}
+.offers-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    gap: 100px;
+}
+.offers-items h3{
+    font-size: 25px;
+    margin: 15px 0;
+}
+.offers-items span{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.offers-items p{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.offers-items img{
+    width: 200px;
+}
+
+#menu{
+    background: #f4f4f4;
+    padding: 5rem 0;
+
+}
+#menu h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #383848;
+}
+#menu p{
+    font-size: 16px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.menu-items .menu-item img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+
+}
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.menu-item h3{
+    color: #383848;
+    border-bottom: 1px dashed #c2bdbd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.menu-item span{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#menu .btn{
+    background-color: #e4b95b;
+    color: #fff;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#menu .btn:hover{
+    background-color: #383848;
+}
+
+#daytime{
+    background:url(./img/daytime_bg.jpeg) center center/cover fixed no-repeat;
+    color: #fff;
+    text-align: center;
+}
+#daytime .daytime-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+
+
+}
+#daytime .daytime-items h3{
+    font-size: 32px;
+    margin: 20px 0 10px;
+}
+#daytime .daytime-items p{
+    font-size:500;
+    
+}
+#gallary h2{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+#gallary{
+    background:url('./img/offer-background.jpg') center center/cover no-repeat ;
+    padding: 8rem 0 6rem;
+    height: 75%;
+}
+#gallary img{
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8;
+}
+#gallary img:hover{
+    opacity: 1;
+}
+.img-gallary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#contact{
+    padding: 5rem 0;
+    background-color: #f4f4f4;
+}
+#contact .container{
+    max-width: 1150px;
+}
+.contact-content{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+#contact .contact-content .contact-info{
+    width: 50%;
+}
+.contact-info div{
+    margin: 30px 0;
+    line-height: 1.7;
+
+}
+.contact-info h3{
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+}
+.contact-info p{
+    color: #9a9a9a;
+}
+.contact-info i{
+    color: #e4b95b;
+    margin-right: 5px;
+
+}
+.contact-info a i{
+    color: #fff;
+    background-color: #383848;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    &:hover{
+        cursor: pointer;
+        background-color: #e4b95b;
+        color: #383848;
+    }
+}
+form{
+    width: 50%;
+
+}
+form input , textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #e3e2dd;
+    border-radius: 15px;
+}
+form .btn{
+    background-color:#e4b95b ;
+    color: #fff;
+    &:hover{
+        background-color: #383848;
+       cursor: pointer;
+    }
+}
+#footer div{
+    background:url('./img/offer-background.jpg') center center/cover no-repeat ;
+    height: 60px;
+
+}
